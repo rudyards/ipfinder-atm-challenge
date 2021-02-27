@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ipfinder is a straightforward app that uses GeoJS to find and cache IP Addresses.
 
-Things you may want to cover:
+In order to start it up, run ``rails s`` from the project's home directory.
 
-* Ruby version
+You can then add addresses and get initial information via ``/addresses/find?ip=``.
 
-* System dependencies
+Once you've found one or more addresses, you should use ``/addresses/show`` to see all the addresses you've searched thus far! You can also use ``/addresses/show?country="United States"``, ``/addresses/show?city="Los Angeles"``, or ``/addresses/show?city="Los Angeles"&country="United States"`` to filter down to a subset of the addresses you've looked up that match the included parameters.
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ipfinder uses rspec for testing. Run ``bundle exec rspec`` from the project's home directory to see the current state of tests.
